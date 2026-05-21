@@ -23,7 +23,8 @@ export default function App(){
 
   return (
     <div className="container">
-      <h1>Todo List</h1>
+      <h1>My Todo List</h1>
+      <p>What you need to do today?</p>
       <TodoForm onAdd={addTodo} />
       {loading ? <p>Loading...</p> : <TodoList todos={todos} onToggle={toggleComplete} onDelete={removeTodo} />}
     </div>
